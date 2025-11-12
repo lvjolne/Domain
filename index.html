@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Hosting dan Domain</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-overlay {
+      background: rgba(0,0,0,0.6);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    footer {
+      background: #212529;
+      color: #ccc;
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Hosting & Domain</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="domain & hosting.html" class="nav-link active">Beranda</a></li>
+          <li class="nav-item"><a href="domain.html" class="nav-link">Domain</a></li>
+          <li class="nav-item"><a href="hosting.html" class="nav-link">Hosting</a></li>
+          <li class="nav-item"><a href="ekstensi.html" class="nav-link">Ekstensi</a></li>
+          <li class="nav-item"><a href="Layanan Web.html" class="nav-link">Layanan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Selamat Datang di Dunia Hosting & Domain</h1>
+        <p class="lead mb-4">Pelajari dasar-dasar teknologi web yang membuat situsmu online.</p>
+        <a href="domain.html" class="btn btn-primary btn-lg">Mulai Belajar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Topik Populer -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Topik Populer</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="data:image/png;base64,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" class="card-img-top" alt="Domain">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Domain</h5>
+              <p class="card-text">Alamat unik website agar mudah diakses di internet.</p>
+              <a href="domain.html" class="btn btn-outline-primary btn-sm">Pelajari</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Hosting">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Hosting</h5>
+              <p class="card-text">Tempat penyimpanan semua file website agar bisa diakses.</p>
+              <a href="hosting.html" class="btn btn-outline-primary btn-sm">Pelajari</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Ekstensi">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Ekstensi Domain</h5>
+              <p class="card-text">Kenali berbagai jenis ekstensi domain seperti .com, .id, dan lainnya.</p>
+              <a href="ekstensi.html" class="btn btn-outline-primary btn-sm">Pelajari</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Layanan">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Layanan Web</h5>
+              <p class="card-text">Fitur tambahan seperti SSL, email profesional, dan keamanan website.</p>
+              <a href="layanan.html" class="btn btn-outline-primary btn-sm">Pelajari</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Hosting & Domain. Semua hak cipta dilindungi.</p>
+      <p><a href="#">Kebijakan Privasi</a> | <a href="#">Syarat & Ketentuan</a></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
